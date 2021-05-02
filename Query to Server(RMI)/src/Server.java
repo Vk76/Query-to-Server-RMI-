@@ -6,6 +6,6 @@ public class Server {
         Registry registry = LocateRegistry.createRegistry(5000);
         EmployeeImpl employee = new EmployeeImpl();
         registry.bind("getEmployee", employee);
-        System.out.println("Objects registered");
+        System.out.println("Objects registered...");
     }
 }
